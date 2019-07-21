@@ -1,15 +1,24 @@
 {
   "files": {
     "main.css": "/fcc-drum-machine/static/css/main.8c2ac267.chunk.css",
-    "main.js": "/fcc-drum-machine/static/js/main.e4206e46.chunk.js",
-    "main.js.map": "/fcc-drum-machine/static/js/main.e4206e46.chunk.js.map",
+    "main.js": "/fcc-drum-machine/static/js/main.4f4e4685.chunk.js",
+    "main.js.map": "/fcc-drum-machine/static/js/main.4f4e4685.chunk.js.map",
     "runtime~main.js": "/fcc-drum-machine/static/js/runtime~main.b07d6816.js",
     "runtime~main.js.map": "/fcc-drum-machine/static/js/runtime~main.b07d6816.js.map",
-    "static/js/2.5c4e487f.chunk.js": "/fcc-drum-machine/static/js/2.5c4e487f.chunk.js",
-    "static/js/2.5c4e487f.chunk.js.map": "/fcc-drum-machine/static/js/2.5c4e487f.chunk.js.map",
+    "static/js/2.0f184ccb.chunk.js": "/fcc-drum-machine/static/js/2.0f184ccb.chunk.js",
+    "static/js/2.0f184ccb.chunk.js.map": "/fcc-drum-machine/static/js/2.0f184ccb.chunk.js.map",
     "index.html": "/fcc-drum-machine/index.html",
-    "precache-manifest.af64b1a7ca2680d27f42682dafd0261e.js": "/fcc-drum-machine/precache-manifest.af64b1a7ca2680d27f42682dafd0261e.js",
+    "precache-manifest.f94945a55f42bd868b79b324d812be02.js": "/fcc-drum-machine/precache-manifest.f94945a55f42bd868b79b324d812be02.js",
     "service-worker.js": "/fcc-drum-machine/service-worker.js",
-    "static/css/main.8c2ac267.chunk.css.map": "/fcc-drum-machine/static/css/main.8c2ac267.chunk.css.map"
+    "static/css/main.8c2ac267.chunk.css.map": "/fcc-drum-machine/static/css/main.8c2ac267.chunk.css.map",
+    "static/media/ekostab.wav": "/fcc-drum-machine/static/media/ekostab.9e6886e8.wav",
+    "static/media/fm-wave-hit.wav": "/fcc-drum-machine/static/media/fm-wave-hit.63c0680b.wav",
+    "static/media/fm_clonk.wav": "/fcc-drum-machine/static/media/fm_clonk.f22ecd8a.wav",
+    "static/media/fx-spindown.wav": "/fcc-drum-machine/static/media/fx-spindown.2688e80e.wav",
+    "static/media/mean-analog-pling.wav": "/fcc-drum-machine/static/media/mean-analog-pling.6277c378.wav",
+    "static/media/meep.wav": "/fcc-drum-machine/static/media/meep.486b9313.wav",
+    "static/media/metal-clink.wav": "/fcc-drum-machine/static/media/metal-clink.830bdd8b.wav",
+    "static/media/phaser-echo-hit.wav": "/fcc-drum-machine/static/media/phaser-echo-hit.11e5f155.wav",
+    "static/media/tek-beep-up.wav": "/fcc-drum-machine/static/media/tek-beep-up.dded74ba.wav"
   }
 }
