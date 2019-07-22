@@ -11,6 +11,7 @@ import d6 from './drums/phaser-echo-hit.wav';
 import d7 from './drums/mean-analog-pling.wav';
 import d8 from './drums/meep.wav';
 import d9 from './drums/tek-beep-up.wav';
+import { argumentPlaceholder } from '@babel/types';
 
 
 
@@ -35,8 +36,16 @@ const Button = (props) => {
     }
         
     return (
-        <div>
+        <div id="buttons">
             {buttons}        
+        </div>
+    );
+}
+
+const Volume = (props) => {
+    return (
+        <div id="volume">
+            <input type="range" min="1" max="100" onChange={props.handle} />
         </div>
     );
 }
@@ -46,7 +55,7 @@ class Main extends React.Component {
     constructor() {
         super();
         this.state = {
-            audioClip: '',
+            display: '',
             volume: 0.5,
             obj: {
                 'Q': d1,
@@ -69,24 +78,24 @@ class Main extends React.Component {
     play = (event) => {
         let audioClip = '';
         let keyValue = '';
-        let padValue = '';
+        let padId = '';
         if (event.type === 'keyup') {
             keyValue = event['key'].toUpperCase();
             if (document.getElementById(keyValue)) {
-                document.getElementById(keyValue).play();
                 document.getElementById(keyValue).volume = this.state.volume;
+                document.getElementById(keyValue).play();
                 audioClip = this.clip(this.state.obj[keyValue]);
             } 
         }
         else if (event.type === 'click') {
-            padValue = event.target.value;
-            document.getElementById(padValue).play();
-            document.getElementById(padValue).volume = this.state.volume;
+            padId = event.target.value;
+            document.getElementById(padId).volume = this.state.volume;
+            document.getElementById(padId).play();
             audioClip = event.target.id;
         }
         
         this.setState({
-            audioClip: audioClip,
+            display: audioClip,
         });
     }
 
@@ -98,23 +107,30 @@ class Main extends React.Component {
     handleEvent = (event) => {
         let volume = event.target.value;
         let audioVol = (volume / 100).toFixed(1);
-        let displayVol = (volume < 5)?'Mute':Math.ceil(volume / 10);
+        let displayVol = '';
+
+        if (volume < 5) {
+            displayVol = 'Mute';
+        } else {
+            displayVol = 'Volume: ' + Math.round(volume / 10);
+        }
         
         this.setState({
             volume: audioVol,
-            audioClip: 'Volume: ' + displayVol,
+            display: displayVol,
         });
 
-        // console.log('state volume: ' + volume);
+        // console.log(volume)
+
     }
 
     render() {
        
         return (
             <div id="drum-machine">
-                <div id="display">{this.state.audioClip}</div>  
+                <div id="display">{this.state.display}</div>  
                 <Button play={this.play} clip={this.clip} obj={this.state.obj} />
-                <input type="range" min="1" max="100" onChange={this.handleEvent} />
+                <Volume handle = {this.handleEvent}/>
             </div>
         );
     }

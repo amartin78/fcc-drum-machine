@@ -17,3 +17,25 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+#display {
+  position: absolute;
+  top: 1rem;
+  left: 28rem;
+}
+
+#buttons {
+  position: absolute;
+  top: 1rem;
+  left: 38rem;
+}
+
+#volume {
+  position: absolute;
+  margin: 4rem;
+  width: 40vw;
+}
+
+#volume input {
+  width: 100%;
+}
