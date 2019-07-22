@@ -1,0 +1,2 @@
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}#drum-machine{display:flex;justify-content:center;align-items:center}#display{left:28rem}#buttons,#display{position:absolute;top:1rem}#buttons{left:38rem}#volume{position:absolute;margin:4rem;width:40vw}#volume input{width:100%}
+/*# sourceMappingURL=main.96dd9d08.chunk.css.map */
