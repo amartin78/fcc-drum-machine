@@ -11,8 +11,6 @@ import d6 from './drums/phaser-echo-hit.wav';
 import d7 from './drums/mean-analog-pling.wav';
 import d8 from './drums/meep.wav';
 import d9 from './drums/tek-beep-up.wav';
-import { argumentPlaceholder } from '@babel/types';
-
 
 
 const Button = (props) => {
@@ -45,7 +43,7 @@ const Button = (props) => {
 const Volume = (props) => {
     return (
         <div id="volume">
-            <input type="range" min="1" max="100" onChange={props.handle} />
+            <input type="range" min="1" max="100" className="slider" onChange={props.handle} />
         </div>
     );
 }

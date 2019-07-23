@@ -36,6 +36,34 @@ code {
   width: 40vw;
 }
 
-#volume input {
+/* #volume input {
   width: 100%;
+} */
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 5px;
+  background-color: beige;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: tomato;
+  cursor: pointer;
+
+}
+
+.slider:hover {
+  opacity: 1;
 }
