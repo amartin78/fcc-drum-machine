@@ -12,33 +12,45 @@ code {
     monospace;
 }
 
+#root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+}
+
 #drum-machine {
   display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid tomato;
+}
+
+#display {
+  display: flex;
+  border: 1px solid tomato;
+  width: 25vw;
+  height: 2rem;
   justify-content: center;
   align-items: center;
 }
 
-#display {
-  position: absolute;
-  top: 1rem;
-  left: 28rem;
-}
-
 #buttons {
-  position: absolute;
+  /* position: absolute;
   top: 1rem;
-  left: 38rem;
+  left: 38rem; */
 }
 
 #volume {
-  position: absolute;
-  margin: 4rem;
-  width: 40vw;
+  /* position: absolute; */
+  margin: 1rem;
+  width: 25vw;
 }
-
-/* #volume input {
-  width: 100%;
-} */
 
 .slider {
   -webkit-appearance: none;
@@ -61,7 +73,14 @@ code {
   border-radius: 50%;
   background-color: tomato;
   cursor: pointer;
+}
 
+.slider::moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: tomato;
+  cursolr: pointer;
 }
 
 .slider:hover {
