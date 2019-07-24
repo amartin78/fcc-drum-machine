@@ -43,7 +43,7 @@ const Button = (props) => {
 const Volume = (props) => {
     return (
         <div id="volume">
-            <input type="range" min="1" max="100" className="slider" onChange={props.handle} />
+            <input type="range" min="1" max="100" className="slider" autoFocus="1" onChange={props.handle} />
         </div>
     );
 }
@@ -117,9 +117,6 @@ class Main extends React.Component {
             volume: audioVol,
             display: displayVol,
         });
-
-        // console.log(volume)
-
     }
 
     render() {
