@@ -24,8 +24,9 @@ code {
 #drum-machine {
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  /* height: 80vh; */
+  padding: 2rem;
+  /* width: 50vw; */
+  height: 80vh;
   justify-content: center;
   align-items: center;
   border: 2px solid tomato;
@@ -34,8 +35,8 @@ code {
 #display {
   display: flex;
   border: 1px solid tomato;
-  width: 25vw;
-  height: 2rem;
+  width: 18rem;
+  height: 3rem;
   justify-content: center;
   align-items: center;
   align-self: flex-start;
@@ -43,26 +44,33 @@ code {
 
 #buttons {
   display: grid;
-  grid-template-columns: repeat(3, 4rem);
-  grid-template-rows: repeat(3, 4rem);
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: repeat(3, 6rem);
   border: 1px solid tomato;
-  margin: 1rem 0rem;
+  margin-top: 1rem;
   align-self: flex-start;
 
 }
 
+.drum-pad {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  outline: none;
+}
+
 
 #volume {
-  margin: 1rem;
-  width: 25vw;
-  transform: rotate(-90deg);
-  align-self: flex-end;
+  margin-bottom: -1.7rem;
+  width: 16rem;
 }
 
 .slider {
   -webkit-appearance: none;
+  transform: rotate(-90deg);
+  transform-origin: -3rem;
   width: 100%;
-  /* height: 12px; */
+  height: 100%;
   border-radius: 5px;
   background-color: beige;
   outline: none;
@@ -93,9 +101,3 @@ code {
   opacity: 1;
 }
 
-.drum-pad {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  outline: none;
-}
