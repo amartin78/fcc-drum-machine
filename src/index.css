@@ -21,8 +21,6 @@ code {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  /* margin-top: 0rem; */
-
 }
 
 #drum-machine {
@@ -31,7 +29,6 @@ code {
   padding: 2rem;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid beige; */
   background-color: white;
   border-radius: 0.6rem;
 }
@@ -115,12 +112,8 @@ code {
     font-size: 1rem;
   }
 
-  #root {
-    /* margin-top: 0rem; */
-  }
-
   #drum-machine {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   #display {
@@ -148,14 +141,59 @@ code {
   }  
 
   .slider::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
   }
   
   .slider::moz-range-thumb {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
   }
 
+}
+
+@media (max-width: 550px) and (orientation: portrait) {
+  
+  body, .drum-pad {
+    font-size: 1rem;
+  }
+
+  #drum-machine {
+    padding: 1.5rem;
+  }
+
+  #display {
+    width: 12rem;
+    height: 1.8rem;
+  }
+
+  #buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 4rem);
+    grid-template-rows: repeat(3, 4rem);
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .drum-pad {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .slider {
+    transform: none;
+    width: 11rem;
+    height: 1.4rem;
+  }  
+
+  .slider::-webkit-slider-thumb {
+    width: 23px;
+    height: 23px;
+  }
+  
+  .slider::moz-range-thumb {
+    width: 23px;
+    height: 23px;
+  }
 }
 

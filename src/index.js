@@ -82,14 +82,14 @@ class Main extends React.Component {
             if (document.getElementById(keyValue)) {
                 document.getElementById(keyValue).volume = this.state.volume;
                 document.getElementById(keyValue).play();
-                audioClip = this.clip(this.state.obj[keyValue]);
+                audioClip = this.capitalize(this.clip(this.state.obj[keyValue]));
             } 
         }
         else if (event.type === 'click') {
             padId = event.target.value;
             document.getElementById(padId).volume = this.state.volume;
             document.getElementById(padId).play();
-            audioClip = event.target.id;
+            audioClip = this.capitalize(event.target.id);
         }
         
         this.setState({
@@ -117,6 +117,10 @@ class Main extends React.Component {
             volume: audioVol,
             display: displayVol,
         });
+    }
+
+    capitalize = (str) => {
+        return str.split(' ').map(w => w[0].toUpperCase() + w.substr(1)).join(' ');
     }
 
     render() {
