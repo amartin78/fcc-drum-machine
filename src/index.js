@@ -110,7 +110,7 @@ class Main extends React.Component {
         if (volume < 5) {
             displayVol = 'Mute';
         } else {
-            displayVol = 'Volume: ' + Math.round(volume / 10);
+            displayVol = 'Volume ' + Math.round(volume / 10);
         }
         
         this.setState({
