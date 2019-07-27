@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.5rem;
 }
 
 code {
@@ -25,8 +26,6 @@ code {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  /* width: 50vw; */
-  height: 80vh;
   justify-content: center;
   align-items: center;
   border: 2px solid tomato;
@@ -35,7 +34,7 @@ code {
 #display {
   display: flex;
   border: 1px solid tomato;
-  width: 18rem;
+  width: 21rem;
   height: 3rem;
   justify-content: center;
   align-items: center;
@@ -46,10 +45,11 @@ code {
   display: grid;
   grid-template-columns: repeat(3, 6rem);
   grid-template-rows: repeat(3, 6rem);
-  border: 1px solid tomato;
+  justify-items: center;
+  align-items: center;
   margin-top: 1rem;
   align-self: flex-start;
-
+  margin-bottom: -2rem;
 }
 
 .drum-pad {
@@ -57,33 +57,30 @@ code {
   height: 5rem;
   border-radius: 50%;
   outline: none;
-}
-
-
-#volume {
-  margin-bottom: -1.7rem;
-  width: 16rem;
+  border: 1px solid tomato;
+  font-size: 1.5rem;
 }
 
 .slider {
   -webkit-appearance: none;
-  transform: rotate(-90deg);
-  transform-origin: -3rem;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
+  transform: rotate(270deg);
+  transform-origin: 10rem -8rem;
+  width: 18rem;
+  height: 1.7rem;
+  border-radius: 1rem;
   background-color: beige;
   outline: none;
-  opacity: 0.8;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: opacity 0.3s;
+  border: 1px solid tomato;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
   border-radius: 50%;
   background-color: tomato;
   cursor: pointer;
@@ -94,10 +91,61 @@ code {
   height: 25px;
   border-radius: 50%;
   background-color: tomato;
-  cursolr: pointer;
+  cursor: pointer;
 }
 
 .slider:hover {
   opacity: 1;
+}
+
+
+@media (max-width: 850px) and (orientation: landscape) {
+
+  body, .drum-pad {
+    font-size: 1rem;
+  }
+
+  #root {
+    margin-top: 0rem;
+  }
+
+  #drum-machine {
+    padding: 1rem;
+  }
+
+  #display {
+    width: 13rem;
+    height: 1.8rem;
+  }
+
+  #buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 3.5rem);
+    grid-template-rows: repeat(3, 3.5rem);
+    margin-bottom: -1.8rem;
+  }
+
+  .drum-pad {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .slider {
+    transform: rotate(270deg);
+    transform-origin: 5.8rem -4.5rem;
+    width: 10rem;
+    height: 1.4rem;
+  }  
+
+  .slider::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .slider::moz-range-thumb {
+    width: 20px;
+    height: 20px;
+  }
+
 }
 

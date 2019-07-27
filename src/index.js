@@ -43,7 +43,7 @@ const Button = (props) => {
 const Volume = (props) => {
     return (
         <div id="volume">
-            <input type="range" min="1" max="100" className="slider" autoFocus="1" onChange={props.handle} />
+            <input z-index="1" type="range" min="1" max="100" className="slider" autoFocus="1" onChange={props.handle} />
         </div>
     );
 }
@@ -125,7 +125,7 @@ class Main extends React.Component {
             <div id="drum-machine">
                 <div id="display">{this.state.display}</div>  
                 <Button play={this.play} clip={this.clip} obj={this.state.obj} />
-                <Volume handle = {this.handleEvent}/>
+                <Volume handle = {this.handleEvent} />
             </div>
         );
     }
