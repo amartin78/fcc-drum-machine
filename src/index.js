@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import d1 from './drums/fm_clonk.wav';
-import d2 from './drums/ekostab.wav';
-import d3 from './drums/metal-clink.wav';
-import d4 from './drums/fm-wave-hit.wav';
-import d5 from './drums/fx-spindown.wav';
-import d6 from './drums/phaser-echo-hit.wav';
+import d1 from './drums/bong-thong-kick.wav';
+import d2 from './drums/fm-wave-hit.wav';
+import d3 from './drums/noise-clap.wav';
+import d4 from './drums/mrk-sd06.wav';
+import d5 from './drums/broken-head-drum.wav';
+import d6 from './drums/HandClap.wav';
 import d7 from './drums/mean-analog-pling.wav';
-import d8 from './drums/meep.wav';
-import d9 from './drums/tek-beep-up.wav';
+import d8 from './drums/fm_clonk.wav';
+import d9 from './drums/bunchakiks19.wav';
 
 
 const Button = (props) => {
