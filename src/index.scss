@@ -1,13 +1,19 @@
+
+@mixin thumbStyle() {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: tomato;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-size: 1.5rem;
   background-color: darksalmon;
-
 }
 
 code {
@@ -27,8 +33,6 @@ code {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  justify-content: center;
-  align-items: center;
   background-color: white;
   border-radius: 0.6rem;
 }
@@ -39,8 +43,6 @@ code {
   border-radius: 1rem;
   width: 21rem;
   height: 3rem;
-  justify-content: center;
-  align-items: center;
   align-self: flex-start;
   background-color: beige;
   color: tomato;
@@ -50,8 +52,6 @@ code {
   display: grid;
   grid-template-columns: repeat(3, 6rem);
   grid-template-rows: repeat(3, 6rem);
-  justify-items: center;
-  align-items: center;
   margin-top: 1rem;
   align-self: flex-start;
   margin-bottom: -2rem;
@@ -86,25 +86,21 @@ code {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  background-color: tomato;
-  cursor: pointer;
+  @include thumbStyle();
 }
 
 .slider::moz-range-thumb {
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  background-color: tomato;
-  cursor: pointer;
+  @include thumbStyle();
 }
 
 .slider:hover {
   opacity: 1;
 }
 
+.center {
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 850px) and (orientation: landscape) {
 
@@ -196,4 +192,6 @@ code {
     height: 23px;
   }
 }
+
+
 

@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 
 import d1 from './drums/bong-thong-kick.wav';
 import d2 from './drums/fm-wave-hit.wav';
 import d3 from './drums/noise-clap.wav';
-import d4 from './drums/mrk-sd06.wav';
+import d4 from './drums/mrk-sd.wav';
 import d5 from './drums/broken-head-drum.wav';
-import d6 from './drums/HandClap.wav';
+import d6 from './drums/hand-clap.wav';
 import d7 from './drums/mean-analog-pling.wav';
 import d8 from './drums/fm_clonk.wav';
-import d9 from './drums/bunchakiks19.wav';
+import d9 from './drums/bunchakiks.wav';
 
 
 const Button = (props) => {
@@ -34,7 +34,7 @@ const Button = (props) => {
     }
         
     return (
-        <div id="buttons">
+        <div id="buttons" className="center">
             {buttons}        
         </div>
     );
@@ -126,8 +126,8 @@ class Main extends React.Component {
     render() {
        
         return (
-            <div id="drum-machine">
-                <div id="display">{this.state.display}</div>  
+            <div id="drum-machine" className="center">
+                <div id="display" className="center">{this.state.display}</div>  
                 <Button play={this.play} clip={this.clip} obj={this.state.obj} />
                 <Volume handle = {this.handleEvent} />
             </div>
