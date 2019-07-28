@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/fcc-drum-machine/static/css/main.3f447321.chunk.css",
-    "main.js": "/fcc-drum-machine/static/js/main.1533a3dd.chunk.js",
-    "main.js.map": "/fcc-drum-machine/static/js/main.1533a3dd.chunk.js.map",
+    "main.css": "/fcc-drum-machine/static/css/main.c671f344.chunk.css",
+    "main.js": "/fcc-drum-machine/static/js/main.e8bf5cad.chunk.js",
+    "main.js.map": "/fcc-drum-machine/static/js/main.e8bf5cad.chunk.js.map",
     "runtime~main.js": "/fcc-drum-machine/static/js/runtime~main.b07d6816.js",
     "runtime~main.js.map": "/fcc-drum-machine/static/js/runtime~main.b07d6816.js.map",
     "static/js/2.0f184ccb.chunk.js": "/fcc-drum-machine/static/js/2.0f184ccb.chunk.js",
     "static/js/2.0f184ccb.chunk.js.map": "/fcc-drum-machine/static/js/2.0f184ccb.chunk.js.map",
     "index.html": "/fcc-drum-machine/index.html",
-    "precache-manifest.127082c3cc268d16daab62be43f1c3a9.js": "/fcc-drum-machine/precache-manifest.127082c3cc268d16daab62be43f1c3a9.js",
+    "precache-manifest.5f96af4ebdc373b4dfafb1c701b6d2c8.js": "/fcc-drum-machine/precache-manifest.5f96af4ebdc373b4dfafb1c701b6d2c8.js",
     "service-worker.js": "/fcc-drum-machine/service-worker.js",
-    "static/css/main.3f447321.chunk.css.map": "/fcc-drum-machine/static/css/main.3f447321.chunk.css.map",
-    "static/media/ekostab.wav": "/fcc-drum-machine/static/media/ekostab.9e6886e8.wav",
+    "static/css/main.c671f344.chunk.css.map": "/fcc-drum-machine/static/css/main.c671f344.chunk.css.map",
+    "static/media/HandClap.wav": "/fcc-drum-machine/static/media/HandClap.7b97ba2c.wav",
+    "static/media/bong-thong-kick.wav": "/fcc-drum-machine/static/media/bong-thong-kick.1a2a9162.wav",
+    "static/media/broken-head-drum.wav": "/fcc-drum-machine/static/media/broken-head-drum.2cccc187.wav",
+    "static/media/bunchakiks19.wav": "/fcc-drum-machine/static/media/bunchakiks19.e04a3f8d.wav",
     "static/media/fm-wave-hit.wav": "/fcc-drum-machine/static/media/fm-wave-hit.63c0680b.wav",
     "static/media/fm_clonk.wav": "/fcc-drum-machine/static/media/fm_clonk.f22ecd8a.wav",
-    "static/media/fx-spindown.wav": "/fcc-drum-machine/static/media/fx-spindown.2688e80e.wav",
     "static/media/mean-analog-pling.wav": "/fcc-drum-machine/static/media/mean-analog-pling.6277c378.wav",
-    "static/media/meep.wav": "/fcc-drum-machine/static/media/meep.486b9313.wav",
-    "static/media/metal-clink.wav": "/fcc-drum-machine/static/media/metal-clink.830bdd8b.wav",
-    "static/media/phaser-echo-hit.wav": "/fcc-drum-machine/static/media/phaser-echo-hit.11e5f155.wav",
-    "static/media/tek-beep-up.wav": "/fcc-drum-machine/static/media/tek-beep-up.dded74ba.wav"
+    "static/media/mrk-sd06.wav": "/fcc-drum-machine/static/media/mrk-sd06.701a2b0c.wav",
+    "static/media/noise-clap.wav": "/fcc-drum-machine/static/media/noise-clap.a2b5d0b9.wav"
   }
 }
